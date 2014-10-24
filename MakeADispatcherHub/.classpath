@@ -15,22 +15,22 @@
 	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
 	<classpathentry kind="lib" path="lib/lombok.jar"/>
 	<classpathentry kind="lib" path="lib/xBeeJPacketBuilder.jar"/>
-	<classpathentry kind="lib" path="C:/Users/diego.braga/Desktop/Stuff/COFFEE/Software/workspace/MakeADispatcherHub/lib/pi4j-core.jar" sourcepath="lib/pi4j-0.0.5/pi4j-core-sources.jar">
+	<classpathentry kind="lib" path="C:/Users/diego.braga/git/makeadispatcherhub/MakeADispatcherHub/lib/pi4j-core.jar" sourcepath="lib/pi4j-0.0.5/pi4j-core-sources.jar">
 		<attributes>
 			<attribute name="javadoc_location" value="jar:platform:/resource/MakeADispatcherHub/lib/pi4j-0.0.5/pi4j-core-javadoc.jar!/"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="C:/Users/diego.braga/Desktop/Stuff/COFFEE/Software/workspace/MakeADispatcherHub/lib/pi4j-device.jar" sourcepath="lib/pi4j-0.0.5/pi4j-device-sources.jar">
+	<classpathentry kind="lib" path="C:/Users/diego.braga/git/makeadispatcherhub/MakeADispatcherHub/lib/pi4j-device.jar" sourcepath="lib/pi4j-0.0.5/pi4j-device-sources.jar">
 		<attributes>
 			<attribute name="javadoc_location" value="jar:platform:/resource/MakeADispatcherHub/lib/pi4j-0.0.5/pi4j-device-javadoc.jar!/"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="C:/Users/diego.braga/Desktop/Stuff/COFFEE/Software/workspace/MakeADispatcherHub/lib/pi4j-gpio-extension.jar" sourcepath="lib/pi4j-0.0.5/pi4j-gpio-extension-sources.jar">
+	<classpathentry kind="lib" path="C:/Users/diego.braga/git/makeadispatcherhub/MakeADispatcherHub/lib/pi4j-gpio-extension.jar" sourcepath="lib/pi4j-0.0.5/pi4j-gpio-extension-sources.jar">
 		<attributes>
 			<attribute name="javadoc_location" value="jar:platform:/resource/MakeADispatcherHub/lib/pi4j-0.0.5/pi4j-gpio-extension-javadoc.jar!/"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="C:/Users/diego.braga/Desktop/Stuff/COFFEE/Software/workspace/MakeADispatcherHub/lib/pi4j-service.jar" sourcepath="lib/pi4j-0.0.5/pi4j-service-sources.jar">
+	<classpathentry kind="lib" path="C:/Users/diego.braga/git/makeadispatcherhub/MakeADispatcherHub/lib/pi4j-service.jar" sourcepath="lib/pi4j-0.0.5/pi4j-service-sources.jar">
 		<attributes>
 			<attribute name="javadoc_location" value="jar:platform:/resource/MakeADispatcherHub/lib/pi4j-0.0.5/pi4j-service-javadoc.jar!/"/>
 		</attributes>
