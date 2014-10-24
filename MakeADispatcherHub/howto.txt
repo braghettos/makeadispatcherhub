@@ -1,0 +1,23 @@
+---------------------------------------------------------------------
+-- Dipendenze per utilizzo dell'architettura RESTful
+---------------------------------------------------------------------
+Viene utilizzata l'implementazione Jersey 1.18 compatibile con il
+Google App Engine.
+
+Elenco librerie:
+- librerie principali per il server
+	- jersey-bundle-1.18.jar
+	- asm-3.1.jar
+- librerie principali per il client
+	- jersey-bundle-1.18.jar
+- librerie per l'utilizzo di JSON tramite l'implementazione Jackson
+	- jettison.jar
+- librerie per l'utilizzo di JAXB tramite JSON
+	- jackson-core-asl.jar
+	- jackson-mapper-asl.jar
+	- jackson-jaxrs.jar
+	- jackson-xc-1.9.2.jar
+	- jaxb-impl.jar
+	- jaxb-api.jar
+	- activation.jar
+	- stax-api.jar

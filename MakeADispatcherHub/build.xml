@@ -1,0 +1,46 @@
+<project>
+	<path id="classpath">
+		<fileset dir="lib" includes="**/*.jar"/>
+		<fileset dir="WebContent/WEB-INF/lib" includes="**/*.jar"/>
+	</path>
+
+	<target name="clean">
+		<delete dir="build"/>
+	</target>
+
+	<target name="compile" depends="clean">
+		<mkdir dir="build/WEB-INF/classes"/>
+		<javac debug="true" srcdir="src" destdir="build/WEB-INF/classes" classpathref="classpath"/>
+	</target>
+
+	<target name="war" depends="compile">
+		<mkdir dir="build/WEB-INF/lib"/>
+		<mkdir dir="build/META-INF"/>
+
+		<copy todir="build/WEB-INF/lib">
+			<fileset dir="lib"/>
+		</copy>
+
+		<!--<copy todir="build/META-INF">
+			<fileset dir="META-INF"/>
+		</copy>-->
+
+		<copy todir="build">
+			<fileset dir="WebContent"/>
+		</copy>
+
+		<copy file="WebContent/WEB-INF/web.xml" todir="build/WEB-INF"/>
+		<!--<copy file="log4j.properties" todir="build/WEB-INF/classes"/>-->
+		<!--copy file="capacity.properties" todir="build/WEB-INF/classes"/-->
+		
+		<jar destfile="build/MakeADispatcherHub.war" basedir="build"/>
+	</target>
+
+	<!--<target name="deploy" depends="war">
+		<copy file="build/makeacoffee.war" todir="/home/user/apache-tomcat-6.0.18/webapps/"/>
+        <copy file="build/makeacoffee.war" todir="C:/Users/massimo.cattai/Desktop/01.Software/01.Devel/apache-tomcat-7.0.33/webapps"/>
+	</target>-->
+
+	<target name="main" depends="war"/>
+
+</project>
