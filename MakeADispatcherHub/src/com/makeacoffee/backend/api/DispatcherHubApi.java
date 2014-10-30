@@ -22,7 +22,7 @@ public class DispatcherHubApi {
 	@GET
 	@Path("/ed/{device}/{event}")
 	@Produces({ MediaType.APPLICATION_XML, MediaType.APPLICATION_JSON })
-	public String fireEvent(@PathParam("device") Long deviceId,
+	public String fireEvent(@PathParam("device") String deviceId,
 			@PathParam("event") String eventId) {
 		System.out.println("[ed] Invocazione di un evento verso l'end device");
 		System.out.println("[ed] Device da aggiornare: " + deviceId);
@@ -43,7 +43,7 @@ public class DispatcherHubApi {
 	@GET
 	@Path("/gae/{device}/{event}")
 	@Produces({ MediaType.APPLICATION_XML, MediaType.APPLICATION_JSON })
-	public String notifyEvent(@PathParam("device") Long deviceId,
+	public String notifyEvent(@PathParam("device") String deviceId,
 			@PathParam("event") String eventId) {
 		System.out
 				.println("[gae] Notifica al cloud del risultato di un'azione");
