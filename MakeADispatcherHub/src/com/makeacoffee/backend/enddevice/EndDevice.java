@@ -80,17 +80,18 @@ public class EndDevice {
 		
 		System.out.println("Fin qui ci sono arrivato per il device " + deviceId + " ad eseguire l'azione " + msg + "!");
 		
-		/*Frame0x10TransmitRequestInput in = new Frame0x10TransmitRequestInput (0x10, 0, (byte)3, (byte)0x01, deviceId, "FFFE", (byte)0, (byte)0, msg);
-		*/
+		Frame0x10TransmitRequestInput in = new Frame0x10TransmitRequestInput (0x10, 0, (byte)3, (byte)0x01, deviceId, "FFFE", (byte)0, (byte)0, msg);
+		FrameOutput out = xBeeJPacketBuilder.make0x10Frame(in);
 		
-		Frame0x17RemoteATCommandInput in = new Frame0x17RemoteATCommandInput(0x17, 0, (byte)3, (byte)0x01, deviceId, "FFFE", (byte)0, msg, "");
-		FrameOutput out = xBeeJPacketBuilder.make0x17Frame(in);
+		/*Frame0x17RemoteATCommandInput in = new Frame0x17RemoteATCommandInput(0x17, 0, (byte)3, (byte)0x01, deviceId, "FFFE", (byte)0, msg, "");
+		FrameOutput out = xBeeJPacketBuilder.make0x17Frame(in);*/
 		
 		try {
 		
 			for( int i = 0; i < out.packet.size(); i++ )
 			{
 				System.out.println("output: " + String.format("0x%02X", out.packet.get(i)));
+				//System.out.println("output: " + out.packet.get(i));
 			    serial.write( out.packet.get(i));   //invio via seriale il contenuto del pacchetto, byte per byte
 			}
 
